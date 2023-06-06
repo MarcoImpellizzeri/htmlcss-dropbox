@@ -1,9 +1,11 @@
 :root {
     --primary-color: #0061FF;
     --primary-color-light: #B4D0E7;
+    --base-fontsize: 1.1rem;
     --max-fontsize: 5rem;
-    --min-space: 1.5rem;
+    --min-space: 1.9rem;
     --mid-space: 2rem;
+    --space-col-business: 2rem;
 }
 
 * {
@@ -36,6 +38,7 @@ nav  a {
     text-decoration: none;
     padding: 1.5rem;
     color: black;
+    font-size: var(--base-fontsize);
 }
 
 .btn {
@@ -44,6 +47,7 @@ nav  a {
     border: none;
     color: white;
     background-color: var(--primary-color);
+    font-size: 1rem;
 }
 
 #hero-section {
@@ -76,16 +80,19 @@ h1 {
 
 .col-text {
     width: 30%;
+    font-size: var(--base-fontsize);
 }
 
 .col-text button {
     margin: var(--min-space) 0;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
 }
 
 .arrow-down {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    font-size: 3rem;
 }
 
 .col-img {
@@ -93,8 +100,12 @@ h1 {
     flex-grow: 1;
 }
 
+#hero-section {
+    margin-bottom: 80px;
+}
+
 #hero-section .col-img {
-    
+    margin-bottom: -80px;
 }
 
 #hero-section img {
@@ -108,14 +119,41 @@ h1 {
 }
 
 .column {
-    background-color: red;
-    height: 300px;
+    border: 1px dashed red;
     flex-basis: 33%;
+    font-size: var(--base-fontsize);
+    border: 1px solid red;
+}
+
+.border-column{
+    border: 1px solid lightgray;
+}
+
+.logo-title {
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding: .7rem 0;
+}
+
+.desciption-plan {
+    padding: var(--space-col-business) 1.5rem;
+}
+
+.preiod {
+    color: lightgrey;
+}
+
+.offer {
+    margin-top: var(--space-col-business);
+}
+
+.offer div, .title-price h3, .title-price  div {
+    padding-bottom: 20px;
 }
 
 .orizontal-col {
     margin-top: 20px;
-    background-color: red;
     height: 200px;
 }
 
