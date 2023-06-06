@@ -49,6 +49,7 @@ nav  a {
 .container {
     width: 100%;
     margin: 0 auto;
+    background-color: orange;
 }
 
 .container-xl {
@@ -95,4 +96,15 @@ h1 {
     margin-top: 20px;
     background-color: red;
     height: 200px;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cards-row .column {
+    flex-basis: calc(33% - 1rem);
 }
