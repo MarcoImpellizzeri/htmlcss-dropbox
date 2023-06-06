@@ -1,6 +1,9 @@
 :root {
     --primary-color: #0061FF;
     --primary-color-light: #B4D0E7;
+    --max-fontsize: 5rem;
+    --min-space: 1.5rem;
+    --mid-space: 2rem;
 }
 
 * {
@@ -32,11 +35,12 @@ ul {
 nav  a {
     text-decoration: none;
     padding: 1.5rem;
+    color: black;
 }
 
 .btn {
     margin-right: 1.5rem;
-    padding: .3rem .8rem;
+    padding: .4rem .8rem;
     border: none;
     color: white;
     background-color: var(--primary-color);
@@ -49,12 +53,11 @@ nav  a {
 .container {
     width: 100%;
     margin: 0 auto;
-    background-color: orange;
 }
 
 .container-xl {
     max-width: 1200px;
-    background-color: gray;
+    padding-top: 100px;
 }
 
 .container-s {
@@ -62,22 +65,40 @@ nav  a {
     padding: 1rem 0;
 }
 
-/* h1 {
-    font-size: ;
-} */
+h1 {
+    font-size: var(--max-fontsize);
+}
 
 .col-container {
     display: flex;
-    height: 500px;
+    padding-top: 50px;
 }
 
 .col-text {
-    background-color: green;
+    width: 30%;
+}
+
+.col-text button {
+    margin: var(--min-space) 0;
+}
+
+.arrow-down {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
 .col-img {
+    width: 70%;
     flex-grow: 1;
-    background-color: red;
+}
+
+#hero-section .col-img {
+    
+}
+
+#hero-section img {
+    width: 100%;
 }
 
 .row {
