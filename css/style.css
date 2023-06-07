@@ -211,7 +211,7 @@ h2 {
     margin-top: 40px;
 }
 
-.column .line {
+.line {
     height: 50px;
     width: 23%;
     border-bottom: 1px solid lightgray;
@@ -273,11 +273,12 @@ h2 {
 
 .team-section {
     margin-top: 100px;
-    justify-content: space-between;
+    
+    
 }
 
 .team-section .side-section:last-child {
-    justify-content: flex-end;
+    
 }
 
 .team-section, .side-section {
@@ -285,24 +286,41 @@ h2 {
 }
 
 .side-section {
+    flex-grow: 1;
     flex-wrap: wrap;
-    
 }
 
 .section-c {
-    padding: 15px;
-    
+    flex-grow: 1;
+    padding: 3rem;
+    background-color: #F5F5F5;
+}
+
+.section-c img {
+    filter: brightness(0);
+}
+
+.section-c .line{
+    width: 120px;
+}
+
+.section-c p {
+    padding-bottom: 40px;
 }
 
 .logo-team {
-    padding: 15px;
-    width: 300px;
-    height: 300px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 50%;
+    width: 50%;
 }
 
 .logo-team img {
     width: 150px;
+    filter: brightness(1);
+    align-items: center;
+    object-fit: contain;
 }
 
 footer .row {
