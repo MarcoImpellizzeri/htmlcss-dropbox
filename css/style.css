@@ -8,12 +8,11 @@
     --space-col-business: 2rem;
 }
 
-/*  controllare una volta finito l'esecizio:
-
+/*  
+    controllare una volta finito l'esecizio:
     - prova ad usare di piu le variabili 
     - controlla di non aver ripetuto troppi valori simili, nel caso cerca di raggrupparli meglio
     -
-
 */
 
 * {
@@ -256,9 +255,8 @@ h2 {
 
 .cards-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 
 .cards-row img {
@@ -273,12 +271,80 @@ h2 {
     flex-basis: calc(33% - 1rem);
 }
 
+.team-section {
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.team-section .side-section:last-child {
+    justify-content: flex-end;
+}
+
+.team-section, .side-section {
+    display: flex;
+}
+
+.side-section {
+    flex-wrap: wrap;
+    
+}
+
+.section-c {
+    padding: 15px;
+    
+}
+
+.logo-team {
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.logo-team img {
+    width: 150px;
+}
+
 footer .row {
     padding: 1rem;
 }
 
+.green {
+    background-color: #A2D39B;
+}
+
+.dark-red {
+    background-color: #61082B;
+}
+
+.blue {
+    background-color: #0093CE;
+}
+
+.light-red {
+    background-color: #FF1C1C;
+}
+
+.red {
+    background-color: #D5001F;
+}
+
+.light-blue {
+    background-color: #B4D0E7;
+}
+
+.dark-blue {
+    background-color: #0D2481;
+}
+
+.yellow {
+    background-color: #FFD830;
+}
+
+
+
 #lenguage {
     border-top: 1px gray;
     width: 150px;
-    background-color: yellow;
 }
+
