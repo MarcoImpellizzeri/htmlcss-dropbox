@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <!-- una nav-bar divisa un po a destra ed un po a sinistra-->
         <nav>
             <div class="list">
                     <a href="#"><img src="img/logo-small.png" alt="logo dropbox"></a>
@@ -31,6 +32,7 @@
             </div>
         </nav>
 
+        <!-- una hero section con il titolo h1 e due div in flex per il testo e l'immagine -->
         <div id="hero-section">
             <div class="container container-xl">
                 <h1>Tutto cio` che ti serve per il lavoro, in un unico posto</h1>
@@ -43,6 +45,7 @@
                         <div class="arrow-down"><i class="fa-solid fa-arrow-down"></i></div>
                     </div>
 
+                    <!-- ho dato margine negativo per far si che l'immagine uscisse dal div -->
                     <div class="col-img">
                         <img src="img/jumbo.png" alt="img jumbo">
                     </div>
@@ -53,100 +56,155 @@
 
     <main>
         <section>
+            
             <div class="container container-s">
-                <!-- sistemare il titolo e i due radio -->
+                <!-- 2 radio racchiusi in un div per poterli separare -->
                 <h2>Trova un piano business che fa per te</h2>
-                <input class="billing" type="radio" name="fatturazione"> Fatturazione mensile
-                <input class="billing" type="radio" name="fatturazione"> Fatturazione annuale
+
+                <div class="billing">
+                    <input type="radio" name="fatturazione"> Fatturazione mensile
+                </div>
+                
+                <div class="billing">
+                    <input type="radio" name="fatturazione"> Fatturazione annuale
+                </div>
 
                 <div class="row">
+                    <!-- 3 colonne lunge lunghe tutte uguali -->
                     <div class="column border-column">
                         <div class="logo-title">
-                            <span><i class="fa-solid fa-user"></i>Singolo</span>
+                            <span><i class="fa-solid fa-user"></i> Singolo</span>
                         </div>
 
                         <div class="desciption-plan">
                             <div class="title-price">
                                 <h3>Professional</h3>
-                                <div>€ 12.00</div>
+                                <div class="info-price">€ 12.00</div>
                                 <div class="period">/mese</div>
                             </div>
 
-                            <!-- devi trovare il modo di mettere le scritte di fianco alle icone e non farle stare attacate -->
+                            <!-- per far si che le icone stessero a lato del testo senza sembrare un unica cosa ho usato disply flex su icon-text -->
                             <div class="offer">
-                                <div><i class="fa-solid fa-user"></i> 1 Utente</div>
-                                <div> <span><i class="fa-solid fa-folder"></i></span> <span> 5 TB di spazio di archiviazione sicuro</span></div>
-                                <div><i class="fa-solid fa-share-nodes"></i> Funzioni di produttivita` premium e condivisione file semplice e sicura</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-user"></i></div> 1 Utente</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-folder"></i></div> 5 TB di spazio di archiviazione sicuro</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-share-nodes"></i></div> Funzioni di produttivita` premium e condivisione file semplice e sicura</div>
                             </div>
-                            <button></button>
-                            <div><a href="#"></a></div>
+
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <div class="link">oppure <a href="#"> acquista ora </a></div>
+
+                            <!-- un div che serve per creare una line tipo hr ma della misura desiderata -->
                             <div class="line"></div>
-                            <h4></h4>
-                            <div></div>
-                            <div></div>
+
+                            <div class="bottom-sec">
+                                <h4>Punti salienti del piano</h4>
+
+                                <div class="offer">
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Invia file fino a 100GB con Dropbox Transfert</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Cartelle offline su dispositivi mobili</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="column border-column">
                         <div class="logo-title">
-                            <span><i class="fa-solid fa-user"></i>Singolo</span>
+                            <span><i class="fa-solid fa-users"></i> Team</span>
                         </div>
 
                         <div class="desciption-plan">
-                            <h3></h3>
-                            <div></div>
-                            <div class="period">/mese</div>
-                            <div class="offer">
-                                <div><i class="fa-solid fa-user"></i>1 Utente</div>
-                                <div></div>
-                                <div></div>
+                            <div class="title-price">
+                                <h3>Professional</h3>
+                                <div class="info-price">€ 18.00</div>
+                                <div class="period">/utente/mese</div>
                             </div>
-                            <button></button>
-                            <div><a href="#"></a></div>
+
+                            <div class="offer">
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-users"></i></div> 3 o piu` utenti</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-folder"></i></div> Tutto lo spazio di cui ha bisono il tuo team</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-share-nodes"></i></div> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
+                            </div>
+
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <div class="link">oppure <a href="#"> acquista ora </a></div>
                             <div class="line"></div>
-                            <h4></h4>
-                            <div></div>
-                            <div></div>
+
+                            <div class="bottom-sec">
+                                <h4>Punti salienti del piano</h4>
+
+                                <div class="offer">
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Nessun limite di spazio per i file</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Cartelle offline su dispositivi mobili</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Risparmio del 50% rispetto alle iscrizioni singole</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Possibilita` di inserire nuovi membri del team</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Gestione dei permessi in base ai ruoli</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="column border-column">
                         <div class="logo-title">
-                            <span><i class="fa-solid fa-user"></i>Singolo</span>
+                            <span><i class="fa-solid fa-building"></i> Azienda</span>
                         </div>
 
                         <div class="desciption-plan">
-                            <h3></h3>
-                            <div></div>
-                            <div class="period">/mese</div>
-                            <div class="offer">
-                                <div><i class="fa-solid fa-user"></i>1 Utente</div>
-                                <div></div>
-                                <div></div>
+                            <div class="title-price">
+                                <h3>Professional</h3>
+                                <div class="info-price">€ 12.00</div>
+                                <div class="period">/mese</div>
                             </div>
-                            <button></button>
-                            <div><a href="#"></a></div>
+
+                            <div class="offer">
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-user"></i></div> 10 o piu utenti</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-folder"></i></div> Soluzioni personalizzabili per la tua azienda</div>
+                                <div class="icon-text"> <div class="icon"><i class="fa-solid fa-share-nodes"></i></div> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
+                            </div>
+
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <div class="link">oppure <a href="#"> acquista ora </a></div>
                             <div class="line"></div>
-                            <h4></h4>
-                            <div></div>
-                            <div></div>
+
+                            <div class="bottom-sec">
+                                <h4>Punti salienti del piano</h4>
+
+                                <div class="offer">
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Cartelle offline su dispositivi mobili</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Servizio assistenza 24/h</div>
+                                    <div class="icon-text"> <div class="icon color"><i class="fa-solid fa-check"></i></div> Possibilita` di personalizzazione totale</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- una colonna orizzontale cioe` che ha le stesse caratteristiche delle colonne precenti ma pozionata orizzontalmente -->
                 <div class="orizontal-col border-column">
                     <div class="logo-title">
-                        <span><i class="fa-solid fa-user"></i>Singolo</span>
+                        <span><i class="fa-solid fa-building"></i> Team</span>
+                    </div>
+
+                    <div class="or-text">
+                        <div class="cont-sx">
+                            <h3>Enterprice</h3>
+                            <div class="info-price">Contatta l'ufficio vendite</div>
+                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
+                        </div>
+
+                        <div class="cont-dx">
+                            <button class="btn"> Contatta l'ufficio vendite</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
+            <!-- un container con due div in flex uno con l'immagine e laltro con del testo come nell'hero -->
             <div class="container container-s">
                 <div class="col-container">
                     <div class="col-img">
-                        <img src="" alt="img">
+                        <img src="img/" alt="img">
                     </div>
 
                     <div class="col-text">

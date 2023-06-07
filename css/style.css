@@ -8,6 +8,14 @@
     --space-col-business: 2rem;
 }
 
+/*  controllare una volta finito l'esecizio:
+
+    - prova ad usare di piu le variabili 
+    - controlla di non aver ripetuto troppi vaoli simili, nel caso cerca di raggrupparli meglio
+    -
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +36,7 @@ header nav {
     align-items: center;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -97,7 +105,6 @@ h1 {
 
 .col-img {
     width: 70%;
-    flex-grow: 1;
 }
 
 #hero-section {
@@ -112,6 +119,18 @@ h1 {
     width: 100%;
 }
 
+h2 {
+    font-size: calc(var(--max-fontsize) - 2.5rem);
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+.billing {
+    display: inline-block;
+    margin-right: 45px;
+    margin-bottom: 60px;
+}
+
 .row {
     display: flex;
     justify-content: center;
@@ -121,8 +140,8 @@ h1 {
 .column {
     border: 1px dashed red;
     flex-basis: 33%;
-    font-size: var(--base-fontsize);
     border: 1px solid red;
+    min-height: 100%;
 }
 
 .border-column{
@@ -136,25 +155,86 @@ h1 {
     padding: .7rem 0;
 }
 
-.desciption-plan {
+.desciption-plan, .or-text {
     padding: var(--space-col-business) 1.5rem;
 }
 
-.preiod {
-    color: lightgrey;
+.info-price {
+    font-weight: bold;
+}
+
+.info-price, .period {
+    font-size: 0.8rem;
+}
+
+.period {
+    color: grey;
+}
+
+.bottom-sec {
+    margin-bottom: 20px;
 }
 
 .offer {
     margin-top: var(--space-col-business);
 }
 
-.offer div, .title-price h3, .title-price  div {
-    padding-bottom: 20px;
+.offer .icon-text{
+    display: flex;
+}
+
+.icon-text .icon {
+    padding-right: 10px;
+}
+
+.icon-text .color {
+    color: #0061FF;
+}
+
+.offer div, .title-price h3, .title-price div, .cont-sx h3 {
+    padding-bottom: 10px;
+}
+
+.column button {
+    margin-top: var(--space-col-business);
+}
+
+.column button, .cont-dx button {
+    width: 100%;
+    padding: 0.8rem 0;
+}
+
+.column .link {
+    margin-top: 40px;
+}
+
+.column .line {
+    height: 50px;
+    width: 23%;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 60px;
 }
 
 .orizontal-col {
-    margin-top: 20px;
-    height: 200px;
+    margin-top: 60px;
+    min-height: 100%;
+}
+
+.orizontal-col .or-text {
+    display: flex;
+}
+
+.or-text .cont-sx {
+    width: 75%;
+    flex-grow: 1;
+}
+
+.cont-sx p {
+    margin-top: 60px;
+}
+
+.cont-dx {
+    width: 25%;
 }
 
 .cards-row {
