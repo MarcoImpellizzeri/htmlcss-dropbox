@@ -323,10 +323,6 @@ h2 {
     object-fit: contain;
 }
 
-footer .row {
-    padding: 1rem;
-}
-
 .green {
     background-color: #A2D39B;
 }
@@ -359,7 +355,36 @@ footer .row {
     background-color: #FFD830;
 }
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    background-color: var(--primary-color-light);
+}
 
+.section-title .col-container {
+    padding: 0;
+}
+
+.section-title .col-text {
+    align-items: flex-start;
+    padding: 0;
+}
+
+.section-title .col-text button {
+    margin: 0;
+    min-width: 80%;
+}
+
+.section-title h2 {
+    color: #61082B;
+    margin: 0;
+    padding: 0;
+}
+
+footer .row {
+    padding: 1rem;
+}
 
 #lenguage {
     border-top: 1px gray;
