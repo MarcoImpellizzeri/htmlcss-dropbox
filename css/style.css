@@ -11,7 +11,7 @@
 /*  controllare una volta finito l'esecizio:
 
     - prova ad usare di piu le variabili 
-    - controlla di non aver ripetuto troppi vaoli simili, nel caso cerca di raggrupparli meglio
+    - controlla di non aver ripetuto troppi valori simili, nel caso cerca di raggrupparli meglio
     -
 
 */
@@ -79,7 +79,7 @@ nav  a {
 }
 
 .container-s {
-    width: 950px;
+    width: 900px;
     margin-top: 100px;
 }
 
@@ -144,9 +144,7 @@ h2 {
 }
 
 .column {
-    border: 1px dashed red;
     flex-basis: 33%;
-    border: 1px solid red;
     min-height: 100%;
 }
 
@@ -261,6 +259,14 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.cards-row img {
+    width: 100%;
+}
+
+.cards-row h3 {
+    margin-bottom: 20px;
 }
 
 .cards-row .column, footer .column {
