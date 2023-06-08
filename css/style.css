@@ -278,7 +278,6 @@ h2 {
 
 .section-cont {
     margin-top: 100px;
-    border: 1px solid red;
     width: calc(100% / 3);
     aspect-ratio: 1/1;
     display: flex;
@@ -286,18 +285,63 @@ h2 {
 }
 
 .section-cont .box {
-    border: 1px solid blue;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
 .section-cont .box svg {
     width: 50%;
     height: auto;
-    columns: white;
+    color: white;
+}
+
+.team-container .section-cont:nth-child(2) {
+    background-color: #F5F5F5;
+    padding: 2.5rem;
+    display: block;
+}
+
+.section-cont svg {
+    width: 60%;
+}
+
+.section-cont p {
+    margin-bottom: 50px;
+}
+
+.green {
+    background-color: #A2D39B;
+    border: 12px solid #D1E9CD;
+}
+
+.dark-red {
+    background-color: #61082B;
+}
+
+.blue {
+    background-color: #0093CE;
+}
+
+.light-red {
+    background-color: #FF1C1C;
+}
+
+.red {
+    background-color: #D5001F;
+}
+
+.light-blue {
+    background-color: #B4D0E7;
+}
+
+.dark-blue {
+    background-color: #0D2481;
+}
+
+.yellow {
+    background-color: #FFD830;
 }
 
 
