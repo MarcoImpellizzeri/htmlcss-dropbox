@@ -230,6 +230,7 @@ h2 {
 .or-text .cont-sx {
     width: 75%;
     flex-grow: 1;
+    padding: 40px;
 }
 
 .cont-sx p {
@@ -245,7 +246,7 @@ h2 {
 }
 
 .text-partner {
-    padding: 3rem;
+    padding: 40px;
     width: 40%;
 }
 
